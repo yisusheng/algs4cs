@@ -2,7 +2,7 @@
 
 namespace algs
 {
-    class ResizingArrayStack<Item>:IEnumerable<Item>
+    class ResizingArrayStack<Item>//:IEnumerable<Item>
     {
         private Item[] a = new Item[1];
         private int N = 0;
@@ -26,10 +26,10 @@ namespace algs
             if (N > 0 && N == a.Length / 4) resize(a.Length / 2);
             return item;
         }
-        public IEnumerator<Item> GetEnumerator()
-        {
+        //public IEnumerator<Item> GetEnumerator()
+        //{
 
-        }
+        //}
         
     }
 }
